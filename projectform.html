@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project forms</title>
+</head>
+<body>
+    <form action="project.html" width="100%" autocomplete="off">
+    <center>
+        <h1>Forms</h1>
+        <label for="name">First Name:<span style="color:red">*</span></label>
+        <input type="text" id="name" placeholder="enter a first name" required maxlength="16" minlength="3" spellcheck="true">
+        <br>
+        <br>
+        <label for="lastname">Last Name:<span style="color:red">*</span></label>
+        <input type="text" id="lastname" placeholder="enter a last name" required maxlength="16" minlength="3" spellcheck="true">
+        <br>
+        <br>
+        <label for="email">Email:<span style="color:red">*</span></label>
+        <input type="text" id="email" name="one" placeholder="enter email" required pattern="^[a-z\d\W]+@gmail\.com$" spellcheck="true">
+        <br>
+        <br>
+        <label for="password">Password:<span style="color:red">*</span></label>
+        <input type="text" id="password" name="two" placeholder="enter password" required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[!@#$%^&*]).{8,16}" spellcheck="true">
+        <br>
+        <br>
+        <input type="submit">
+</center>
+
+    </form>
+</body>
+</html>
